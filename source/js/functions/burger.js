@@ -19,7 +19,6 @@ const mobileMenuHandler = function(mobileMenu, burger) {
   burger.addEventListener('click', function(){
     mobileMenu.classList.toggle('active');
     burger.classList.toggle('active');
-    console.log('header__burger')
     // overlay.classList.toggle('active');
     // addCustomClass(_vars.bodyEl, 'fixed')
     // headerTag.classList.toggle('active');
@@ -36,13 +35,8 @@ const hideMenuHandler = function(mobileMenu, burger) {
     // headerTag.classList.remove('active');
     // document.body.classList.remove('dis-scroll')
 }
-
   mobileMenuHandler(mobileMenu,burger);
-  this.addEventListener('click', function(e){
-    if (e.target.classList.contains('overlay')) {
-      hideMenuHandler(mobileMenu,burger)
-    }
-  });
+  
   
 
 
