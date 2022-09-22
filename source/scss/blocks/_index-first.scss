@@ -1,0 +1,26 @@
+.index-first {
+  padding-bottom: clamp(64px, 7.364vw, 69px);
+  &__title {
+    display: flex;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    font-family: var(--font-family);
+    color: var(--color-c);
+
+@include small-tablet {
+      justify-content: center;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 16px;
+
+    grid-gap: 25px;
+  }
+}

@@ -1,0 +1,22 @@
+.content-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  &__value {
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(25px, 3.842vw, 36px);
+    line-height: 135%;
+    font-family: var(--font-family);
+    color: var(--color-c);
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(15px, 1.814vw, 17px);
+    line-height: 160%;
+    font-family: var(--font-family);
+    color: var(--color-e);
+  }
+}

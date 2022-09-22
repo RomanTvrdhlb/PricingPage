@@ -1,0 +1,23 @@
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 200px;
+  min-height: 200px;
+
+  background-color: var(--bg-d);
+  border-radius: 0 0 0 26px;
+  transform: translateX(200%);
+
+  transition: all 0.4s;
+
+  &.active {
+    transform: translate(0);
+  }
+}

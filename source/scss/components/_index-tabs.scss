@@ -1,0 +1,31 @@
+.index-tabs {
+  display: grid;
+  align-items: center;
+
+  grid-gap: clamp(32px, 6.83vw, 64px);
+  grid-template-columns: 1fr auto;
+
+@include small-tablet {
+    grid-template-columns: 100%;
+    justify-items: center;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 585px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(14px, 1.921vw, 18px);
+    line-height: 27px;
+    font-family: var(--font-family);
+    color: var(--color-e);
+
+@include small-tablet {
+      justify-content: center;
+      max-width: 100%;
+    }
+  }
+}

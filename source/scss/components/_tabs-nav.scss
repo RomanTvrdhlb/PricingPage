@@ -1,0 +1,35 @@
+.tabs-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+
+  background-color: var(--bg-b);
+  border-radius: 22px;
+
+@include small-tablet {
+  }
+
+  &__btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: var(--font-family);
+    text-align: center;
+    color: var(--color-d);
+    text-shadow: (0 4px 4px rgba(0, 0, 0, 0.25)) ;
+
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+    &.active {
+      color: var(--color-a);
+      text-shadow: none;
+
+      background-color: var(--bg-btn);
+    }
+  }
+}
+

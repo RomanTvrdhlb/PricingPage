@@ -1,0 +1,46 @@
+
+header {
+  padding-bottom: 41px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(31px, 3.002vw, 38px) 24px;
+
+@include small-tablet {
+    .header__btn {
+      display: none;
+    }
+  }
+
+  &__burger {
+    z-index: 50;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    transition: all 0.4s;
+
+    grid-gap: 7px;
+
+    span {
+      width: 23px;
+      height: 2px;
+
+      background-color: var(--color-c);
+
+      transition: all 0.4s;
+      &:not(:nth-child(2)) {
+        width: 15px;
+      }
+    }
+
+    &.active {
+      align-items: center;
+    }
+  }
+}

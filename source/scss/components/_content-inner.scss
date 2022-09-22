@@ -1,0 +1,23 @@
+.content-inner {
+  display: grid;
+  padding: 25px 68px 40px;
+
+  background-color: var(--bg-b);
+  border-radius: 26px;
+
+  grid-gap: 34px;
+  grid-template-columns: repeat(3, 1fr);
+
+@include small-tablet {
+    width: 60%;
+    margin: 0 auto;
+
+    grid-gap: 48px;
+    grid-template-columns: 100%;
+    justify-items: center;
+  }
+
+@include mobile {
+    width: 90%;
+  }
+}
